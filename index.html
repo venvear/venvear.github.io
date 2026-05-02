@@ -4,15 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark" />
-  <meta name="theme-color" content="#0c1220" />
+  <meta name="theme-color" content="#16161f" />
   <meta name="description" content="Quiz games for iPhone and iPad by Andrii Raievnov — geography, trivia, and more." />
   <title>Quiz games — Andrii Raievnov</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="quiz-site-theme.css" />
 </head>
-<body>
+<body class="page-quiz-site">
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="flag-canvas" aria-hidden="true"></div>
@@ -32,6 +33,10 @@
 
   <main id="main" class="wrap wrap-wide">
     <section class="card landing-hero">
+      <div class="wfm-hero-bar">
+        <span class="wfm-badge wfm-badge--green">iPhone &amp; iPad</span>
+        <span class="wfm-badge">Quiz · Learn</span>
+      </div>
       <h1>Play. Learn. Repeat.</h1>
       <p class="lede landing-tagline">
         Indie quiz apps for iPhone and iPad — quick rounds, clear goals, and no clutter.
@@ -43,7 +48,7 @@
     <div class="games-grid">
       <article class="card game-card">
         <div class="game-card-head">
-          <span class="game-card-icon" aria-hidden="true">🌍</span>
+          <img class="game-card-app-icon" src="countries/app-icon.png" width="48" height="48" alt="" decoding="async" />
           <div>
             <h3 class="game-card-title">World Flags Master</h3>
             <p class="game-card-sub">Countries · geography quiz &amp; memory</p>
