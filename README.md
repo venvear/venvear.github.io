@@ -1,3 +1,1 @@
-# venvear.github.io
-
-[Site home → index.html](index.html)
+[Site](https://venvear.github.io/)
