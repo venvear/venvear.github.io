@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#16161f" />
+  <meta name="description" content="Support and help for Fruits &amp; Veges — quiz app by Andrii Raievnov." />
+  <link rel="canonical" href="https://venvear.github.io/fruits/support.html" />
+  <title>Fruits &amp; Veges — Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../quiz-site-theme.css" />
+</head>
+<body class="page-quiz-site">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="flag-canvas" aria-hidden="true"></div>
+  <div class="glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="header-row">
+      <div class="brand">
+        <img class="brand-app-icon" src="app-icon.png" width="56" height="56" alt="" decoding="async" />
+        <div>
+          <p class="eyebrow">App Store</p>
+          <p class="brand-name">Fruits &amp; Veges</p>
+        </div>
+      </div>
+      <nav class="header-nav" aria-label="Page">
+        <a class="text-link" href="../index.html">All games</a>
+        <a class="text-link" href="privacy.html">Privacy policy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero card">
+      <div class="wfm-hero-bar">
+        <span class="wfm-badge">Fruits · Vegetables</span>
+        <span class="wfm-badge wfm-badge--green">Quiz</span>
+      </div>
+      <h1>Support &amp; help</h1>
+      <p class="lede">
+        Quick picture-and-name rounds for fruits and vegetables. This page is the official support URL for
+        <strong>Fruits &amp; Veges</strong> on the App Store.
+      </p>
+      <p class="lede" style="margin: 0 0 0.75rem">
+        <a class="text-link" href="privacy.html">Privacy policy</a> — how we handle data, ads, and the App Store.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="how-title">
+      <h2 id="how-title">Get help</h2>
+      <ul class="action-list">
+        <li>
+          <span class="action-ico" aria-hidden="true">✉️</span>
+          <div>
+            <h3>Email the developer</h3>
+            <a class="btn" href="mailto:venvear.appannie@gmail.com?subject=Support%20for%20Fruits%20%26%20Veges">venvear.appannie@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <span class="action-ico" aria-hidden="true">⭐</span>
+          <div>
+            <h3>Rate on the App Store</h3>
+            <p>Your feedback in App Store reviews helps others discover the app. Thank you for playing.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="faq-title">
+      <h2 id="faq-title">FAQ</h2>
+      <div class="faq">
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>No. You can play without signing in.</p>
+        </details>
+        <details>
+          <summary>What modes are in the app?</summary>
+          <p>
+            Four- and six-button quizzes, a spelling (letters) mode, and a browsable collection table.
+            Pick what fits how you want to study produce names.
+          </p>
+        </details>
+        <details>
+          <summary>In-app purchases and ads</summary>
+          <p>
+            The app may offer in-app purchases to remove ads or unlock extra content, depending
+            on your build and store settings. You can manage purchases in your App Store
+            account settings.
+          </p>
+        </details>
+        <details>
+          <summary>Privacy</summary>
+          <p>
+            We publish a dedicated
+            <a class="text-link" href="privacy.html">Privacy policy</a> for the app, including
+            how advertising (such as Google AdMob) and App Store purchases work. Use the same
+            link in App Store Connect’s Privacy Policy URL.
+          </p>
+        </details>
+        <details>
+          <summary>App won’t start or keeps crashing</summary>
+          <p>
+            Make sure you are on a supported iOS version, restart the device, and update
+            the app from the App Store. If the issue persists, email with your device model
+            and iOS version.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="card fine-print">
+      <h2>About this page</h2>
+      <p>
+        This site is served from GitHub Pages for
+        <strong>Fruits &amp; Veges</strong> (store name may differ by language).
+        Apple may cache the support URL; after you change the email or text, allow a little
+        time for updates to appear everywhere.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="y"></span> Andrii Raievnov · <span class="subtle">Fruits &amp; Veges</span> ·
+      <a class="text-link" href="privacy.html">Privacy</a> ·
+      <a class="text-link" href="../index.html">All games</a></p>
+  </footer>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+  <script>
+    (function () {
+      var foods = "🍎 🍊 🍋 🍌 🍉 🍇 🍓 🫐 🍒 🍑 🥭 🍍 🥥 🥝 🍅 🥑 🥦 🥬 🧅 🌽 🥕 🫑 🥔 🍆 🧄 🫛 ";
+      var canvas = document.querySelector(".flag-canvas");
+      if (!canvas) return;
+      canvas.textContent = foods.repeat(400);
+    })();
+  </script>
+</body>
+</html>
