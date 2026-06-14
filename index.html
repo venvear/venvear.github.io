@@ -4,8 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark" />
-  <meta name="theme-color" content="#16161f" />
+  <meta name="theme-color" content="#090b16" />
   <meta name="description" content="iPhone and iPad games by Andrii Raievnov — word puzzles, geography quizzes, and picture quizzes." />
+  <link rel="canonical" href="https://venvear.github.io/" />
   <title>Games — Andrii Raievnov</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,111 +14,205 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="quiz-site-theme.css" />
 </head>
-<body class="page-quiz-site">
+<body class="page-quiz-site page-games-home">
   <a class="skip-link" href="#main">Skip to content</a>
 
-  <div class="flag-canvas" aria-hidden="true"></div>
+  <div class="game-canvas" aria-hidden="true"></div>
   <div class="glow" aria-hidden="true"></div>
 
   <header class="site-header">
     <div class="header-row">
       <div class="brand">
-        <span class="brand-mark" aria-hidden="true">🎮</span>
+        <span class="brand-mark" aria-hidden="true">AR</span>
         <div>
           <p class="eyebrow">iOS</p>
           <p class="brand-name">Games</p>
         </div>
       </div>
+      <nav class="header-nav" aria-label="Games">
+        <a class="text-link" href="#games">Games</a>
+        <a class="text-link" href="words-game/support/index.html">Support</a>
+      </nav>
     </div>
   </header>
 
-  <main id="main" class="wrap wrap-wide">
-    <section class="card landing-hero">
-      <div class="wfm-hero-bar">
-        <span class="wfm-badge wfm-badge--green">iPhone &amp; iPad</span>
-        <span class="wfm-badge">Words · Quiz · Learn</span>
+  <main id="main" class="game-home">
+    <section class="showcase-hero" aria-labelledby="hero-title">
+      <div class="showcase-copy">
+        <div class="showcase-kicker">
+          <span>iPhone &amp; iPad</span>
+          <span>Words · Flags · Fruits · States · Presidents</span>
+        </div>
+        <h1 id="hero-title">Pocket games with crisp, playful challenges.</h1>
+        <p>
+          A compact collection of word puzzles and quiz games for short sessions, clear goals, and satisfying progress.
+        </p>
+        <div class="showcase-actions">
+          <a class="btn btn-hero" href="#games">Explore games</a>
+        </div>
       </div>
-      <h1>Play. Learn. Repeat.</h1>
-      <p class="lede landing-tagline">
-        Indie games for iPhone and iPad — quick rounds, clear goals, and no clutter.
-        Built by <strong>Andrii Raievnov</strong>.
-      </p>
+
+      <div class="app-shelf" aria-hidden="true">
+        <div class="phone-frame">
+          <div class="phone-top"></div>
+          <div class="hero-app hero-app--words">
+            <img src="words-game/assets/app-icon.png" width="76" height="76" alt="" decoding="async" />
+            <div>
+              <strong>Words Game</strong>
+              <span>Offline word puzzle</span>
+            </div>
+          </div>
+          <div class="hero-mini-grid">
+            <div class="hero-mini hero-mini--flags">
+              <img src="countries/app-icon.png" width="54" height="54" alt="" decoding="async" />
+              <span>Flags</span>
+            </div>
+            <div class="hero-mini hero-mini--fruits">
+              <img src="fruits/app-icon.png" width="54" height="54" alt="" decoding="async" />
+              <span>Fruits</span>
+            </div>
+            <div class="hero-mini hero-mini--states">
+              <img src="americas-states/app-icon.png" width="54" height="54" alt="" decoding="async" />
+              <span>States</span>
+            </div>
+            <div class="hero-mini hero-mini--presidents">
+              <img src="presidents/app-icon.png" width="54" height="54" alt="" decoding="async" />
+              <span>Presidents</span>
+            </div>
+          </div>
+          <div class="phone-dock">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="phone-caption">5 games · one tiny arcade</div>
+        </div>
+      </div>
     </section>
 
-    <h2 class="section-title">Games</h2>
-    <div class="games-grid">
-      <article class="card game-card">
-        <div class="game-card-head">
-          <img class="game-card-app-icon" src="words-game/assets/app-icon.png" width="48" height="48" alt="" decoding="async" />
-          <div>
-            <h3 class="game-card-title">Words Game Offline</h3>
-            <p class="game-card-sub">Word puzzle · offline play</p>
-          </div>
-        </div>
-        <p class="game-card-desc">
-          Build dictionary nouns from the letters of one base word. Play offline in English, Russian, or Spanish.
-        </p>
-        <div class="game-card-actions">
-          <a class="btn" href="https://apps.apple.com/app/id6768779867" rel="noopener noreferrer">App Store</a>
-          <a class="btn-outline" href="words-game/support/">Support</a>
-          <a class="btn-outline" href="words-game/privacy/">Privacy</a>
-        </div>
-      </article>
+    <section class="game-strip" aria-label="Highlights">
+      <div>
+        <strong>5</strong>
+        <span>games</span>
+      </div>
+      <div>
+        <strong>Offline</strong>
+        <span>word play</span>
+      </div>
+      <div>
+        <strong>Quiz</strong>
+        <span>quick rounds</span>
+      </div>
+    </section>
 
-      <article class="card game-card">
-        <div class="game-card-head">
-          <img class="game-card-app-icon" src="countries/app-icon.png" width="48" height="48" alt="" decoding="async" />
-          <div>
-            <h3 class="game-card-title">World Flags Master</h3>
-            <p class="game-card-sub">Countries · geography quiz &amp; memory</p>
-          </div>
-        </div>
-        <p class="game-card-desc">
-          Flags, country names, spelling mode, and a full country table — short sessions you can fit into a break.
-        </p>
-        <div class="game-card-actions">
-          <a class="btn" href="https://apps.apple.com/app/id1453222715" rel="noopener noreferrer">App Store</a>
-          <a class="btn-outline" href="countries/support.html">Support</a>
-          <a class="btn-outline" href="countries/privacy.html">Privacy</a>
-        </div>
-      </article>
+    <section id="games" class="games-section" aria-labelledby="games-title">
+      <div class="section-heading">
+        <p class="eyebrow">Collection</p>
+        <h2 id="games-title">Pick a game</h2>
+      </div>
 
-      <article class="card game-card">
-        <div class="game-card-head">
-          <img class="game-card-app-icon" src="fruits/app-icon.png" width="48" height="48" alt="" decoding="async" />
-          <div>
-            <h3 class="game-card-title">Fruits &amp; Veges</h3>
-            <p class="game-card-sub">Fruits &amp; vegetables · picture quiz</p>
+      <div class="games-grid">
+        <article class="game-card game-card--feature game-card--words">
+          <div class="game-card-copy">
+            <div class="game-card-head">
+              <img class="game-card-app-icon" src="words-game/assets/app-icon.png" width="72" height="72" alt="" decoding="async" />
+              <div>
+                <h3 class="game-card-title">Words Game Offline</h3>
+                <p class="game-card-sub">Word puzzle · offline play</p>
+              </div>
+            </div>
+            <p class="game-card-desc">
+              Build dictionary nouns from the letters of one base word. Play offline in English, Russian, or Spanish.
+            </p>
+            <div class="game-card-actions">
+              <a class="btn" href="https://apps.apple.com/app/id6768779867" rel="noopener noreferrer">App Store</a>
+              <a class="btn-outline" href="words-game/support/index.html">Support</a>
+              <a class="btn-outline" href="words-game/privacy/index.html">Privacy</a>
+            </div>
           </div>
-        </div>
-        <p class="game-card-desc">
-          Four- and six-button rounds, spelling mode, and a collection table — short sessions to learn produce names.
-        </p>
-        <div class="game-card-actions">
-          <a class="btn" href="https://apps.apple.com/us/app/fruits-veges/id1454133208" rel="noopener noreferrer">App Store</a>
-          <a class="btn-outline" href="fruits/support.html">Support</a>
-          <a class="btn-outline" href="fruits/privacy.html">Privacy</a>
-        </div>
-      </article>
+        </article>
 
-      <article class="card game-card">
-        <div class="game-card-head">
-          <img class="game-card-app-icon" src="americas-states/app-icon.png" width="48" height="48" alt="" decoding="async" />
-          <div>
-            <h3 class="game-card-title">United States</h3>
-            <p class="game-card-sub">U.S. states · map-style quiz</p>
+        <article class="game-card game-card--flags">
+          <div class="game-card-copy">
+            <div class="game-card-head">
+              <img class="game-card-app-icon" src="countries/app-icon.png" width="64" height="64" alt="" decoding="async" />
+              <div>
+                <h3 class="game-card-title">World Flags Master</h3>
+                <p class="game-card-sub">Countries · geography quiz &amp; memory</p>
+              </div>
+            </div>
+            <p class="game-card-desc">
+              Flags, country names, spelling mode, and a full country table — short sessions you can fit into a break.
+            </p>
+            <div class="game-card-actions">
+              <a class="btn" href="https://apps.apple.com/us/app/world-flags-master/id1453222715" rel="noopener noreferrer">App Store</a>
+              <a class="btn-outline" href="countries/support.html">Support</a>
+              <a class="btn-outline" href="countries/privacy.html">Privacy</a>
+            </div>
           </div>
-        </div>
-        <p class="game-card-desc">
-          Match states to names, spelling practice, and a full table — built for quick geography drills.
-        </p>
-        <div class="game-card-actions">
-          <a class="btn" href="https://apps.apple.com/us/app/united-states-of-america-quiz/id1453606661" rel="noopener noreferrer">App Store</a>
-          <a class="btn-outline" href="americas-states/support.html">Support</a>
-          <a class="btn-outline" href="americas-states/privacy.html">Privacy</a>
-        </div>
-      </article>
-    </div>
+        </article>
+
+        <article class="game-card game-card--fruits">
+          <div class="game-card-copy">
+            <div class="game-card-head">
+              <img class="game-card-app-icon" src="fruits/app-icon.png" width="64" height="64" alt="" decoding="async" />
+              <div>
+                <h3 class="game-card-title">Fruits &amp; Veges</h3>
+                <p class="game-card-sub">Fruits &amp; vegetables · picture quiz</p>
+              </div>
+            </div>
+            <p class="game-card-desc">
+              Four- and six-button rounds, spelling mode, and a collection table — short sessions to learn produce names.
+            </p>
+            <div class="game-card-actions">
+              <a class="btn" href="https://apps.apple.com/us/app/fruits-veges/id1454133208" rel="noopener noreferrer">App Store</a>
+              <a class="btn-outline" href="fruits/support.html">Support</a>
+              <a class="btn-outline" href="fruits/privacy.html">Privacy</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card game-card--states">
+          <div class="game-card-copy">
+            <div class="game-card-head">
+              <img class="game-card-app-icon" src="americas-states/app-icon.png" width="64" height="64" alt="" decoding="async" />
+              <div>
+                <h3 class="game-card-title">United States</h3>
+                <p class="game-card-sub">U.S. states · map-style quiz</p>
+              </div>
+            </div>
+            <p class="game-card-desc">
+              Match states to names, spelling practice, and a full table — built for quick geography drills.
+            </p>
+            <div class="game-card-actions">
+              <a class="btn" href="https://apps.apple.com/us/app/united-states-of-america-quiz/id1453606661" rel="noopener noreferrer">App Store</a>
+              <a class="btn-outline" href="americas-states/support.html">Support</a>
+              <a class="btn-outline" href="americas-states/privacy.html">Privacy</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card game-card--presidents">
+          <div class="game-card-copy">
+            <div class="game-card-head">
+              <img class="game-card-app-icon" src="presidents/app-icon.png" width="64" height="64" alt="" decoding="async" />
+              <div>
+                <h3 class="game-card-title">US Presidents Quiz</h3>
+                <p class="game-card-sub">Presidents · history quiz</p>
+              </div>
+            </div>
+            <p class="game-card-desc">
+              Learn and recognize U.S. presidents with quick quiz rounds, names, portraits, and simple review practice.
+            </p>
+            <div class="game-card-actions">
+              <a class="btn" href="https://apps.apple.com/us/app/us-presidents-quiz/id1454923331" rel="noopener noreferrer">App Store</a>
+              <a class="btn-outline" href="presidents/support.html">Support</a>
+              <a class="btn-outline" href="presidents/privacy.html">Privacy</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -128,16 +223,16 @@
   </script>
   <script>
     (function () {
-      var codes = "AD AE AF AG AL AM AO AR AT AU AZ BA BB BD BE BF BG BH BI BJ BO BR BS BT BW BY BZ CA CD CF CG CH CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG ES ET FI FJ FR GA GB GD GE GH GM GN GQ GR GT GW GY HK HN HR HT HU ID IE IL IN IQ IR IS IT JM JO JP KE KG KH KM KN KR KW KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MK ML MM MN MR MT MU MV MW MX MY MZ NA NE NG NI NL NO NP NZ OM PA PE PG PH PK PL PS PT PY QA RO RS RU RW SA SC SD SE SG SI SK SL SM SN SO SR ST SV SY SZ TC TD TG TH TJ TM TN TR TT TW TZ UA UG US UY UZ VA VC VE VN VU WS YE ZA ZM ZW".split(" ");
+      var codes = "AD AE AF AG AR AT AU BE BG BR CA CH CL CN CO CZ DE DK EG ES FI FR GB GE GR HR HU ID IE IL IN IT JP KR LT LV MX NL NO NZ PL PT RO SE SG TR UA US ZA".split(" ");
       function flag(code) {
         return code.split("").map(function (c) {
           return String.fromCodePoint(0x1f1e6 - 65 + c.charCodeAt(0));
         }).join("");
       }
-      var strip = codes.map(flag).join("\u00a0");
-      var canvas = document.querySelector(".flag-canvas");
+      var strip = codes.map(flag).join("\u00a0") + "\u00a0 WORDS \u00a0 FRUITS \u00a0 STATES \u00a0";
+      var canvas = document.querySelector(".game-canvas");
       if (!canvas) return;
-      var s = (strip + " ").repeat(200);
+      var s = (strip + " ").repeat(120);
       canvas.textContent = s;
     })();
   </script>

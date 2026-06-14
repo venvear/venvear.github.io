@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="dark" />
   <meta name="theme-color" content="#090b16" />
-  <meta name="description" content="Support and help for World Flags Master (Countries) — quiz app by Andrii Raievnov." />
-  <link rel="canonical" href="https://venvear.github.io/countries/support.html" />
-  <title>World Flags Master — Support</title>
+  <meta name="description" content="Support and help for US Presidents Quiz — history quiz app by Andrii Raievnov." />
+  <link rel="canonical" href="https://venvear.github.io/presidents/support.html" />
+  <title>US Presidents Quiz — Support</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet" />
@@ -26,7 +26,7 @@
         <img class="brand-app-icon" src="app-icon.png" width="56" height="56" alt="" decoding="async" />
         <div>
           <p class="eyebrow">App Store</p>
-          <p class="brand-name">World Flags Master</p>
+          <p class="brand-name">US Presidents Quiz</p>
         </div>
       </div>
       <nav class="header-nav" aria-label="Page">
@@ -39,14 +39,13 @@
   <main id="main" class="wrap">
     <section class="hero card">
       <div class="wfm-hero-bar">
-        <span class="wfm-badge">Flags · Geography</span>
+        <span class="wfm-badge">Presidents · History</span>
         <span class="wfm-badge wfm-badge--green">Quiz</span>
       </div>
       <h1>Support &amp; help</h1>
       <p class="lede">
-        Fast geography quiz: flags, country names, and memory-friendly rounds.
-        This page is the official support URL for
-        <strong>World Flags Master</strong> on the App Store.
+        Fast practice for U.S. president names and portraits. This page is the official support URL for
+        <strong>US Presidents Quiz</strong> on the App Store.
       </p>
       <p class="lede" style="margin: 0 0 0.75rem">
         <a class="text-link" href="privacy.html">Privacy policy</a> — how we handle data, ads, and the App Store.
@@ -60,7 +59,7 @@
           <span class="action-ico" aria-hidden="true">✉️</span>
           <div>
             <h3>Email the developer</h3>
-            <a class="btn" id="support-mail" href="mailto:andrii.raievnov@gmail.com?subject=Support%20for%20World%20Flags%20Master">andrii.raievnov@gmail.com</a>
+            <a class="btn" href="mailto:andrii.raievnov@gmail.com?subject=Support%20for%20US%20Presidents%20Quiz">andrii.raievnov@gmail.com</a>
           </div>
         </li>
         <li>
@@ -68,7 +67,7 @@
           <div>
             <h3>Rate on the App Store</h3>
             <p>Your feedback in App Store reviews helps others discover the app. Thank you for playing.</p>
-            <a class="btn-outline" href="https://apps.apple.com/us/app/world-flags-master/id1453222715" rel="noopener noreferrer">Open App Store</a>
+            <a class="btn-outline" href="https://apps.apple.com/us/app/us-presidents-quiz/id1454923331" rel="noopener noreferrer">Open App Store</a>
           </div>
         </li>
       </ul>
@@ -84,8 +83,7 @@
         <details>
           <summary>What modes are in the app?</summary>
           <p>
-            Four- and six-button quizzes, a spelling (letters) mode, and a browsable
-            country table. Pick what fits your study style.
+            Four- and six-button quizzes, spelling practice, and a table of U.S. presidents with portraits when you want a refresher.
           </p>
         </details>
         <details>
@@ -120,7 +118,7 @@
       <h2>About this page</h2>
       <p>
         This site is served from GitHub Pages for
-        <strong>World Flags Master</strong> (store name may differ by language).
+        <strong>US Presidents Quiz</strong> (store name may differ by language).
         Apple may cache the support URL; after you change the email or text, allow a little
         time for updates to appear everywhere.
       </p>
@@ -128,7 +126,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="y"></span> Andrii Raievnov · <span class="subtle">World Flags Master / Countries</span> ·
+    <p>© <span id="y"></span> Andrii Raievnov · <span class="subtle">US Presidents Quiz · Presidents</span> ·
       <a class="text-link" href="privacy.html">Privacy</a> ·
       <a class="text-link" href="../index.html">All games</a></p>
   </footer>
@@ -137,17 +135,13 @@
   </script>
   <script>
     (function () {
-      var codes = "AD AE AF AG AL AM AO AR AT AU AZ BA BB BD BE BF BG BH BI BJ BO BR BS BT BW BY BZ CA CD CF CG CH CL CM CN CO CR CU CV CY CZ DE DJ DK DM DO DZ EC EE EG ES ET FI FJ FR GA GB GD GE GH GM GN GQ GR GT GW GY HK HN HR HT HU ID IE IL IN IQ IR IS IT JM JO JP KE KG KH KM KN KR KW KZ LA LB LC LI LK LR LS LT LU LV LY MA MC MD ME MG MK ML MM MN MR MT MU MV MW MX MY MZ NA NE NG NI NL NO NP NZ OM PA PE PG PH PK PL PS PT PY QA RO RS RU RW SA SC SD SE SG SI SK SL SM SN SO SR ST SV SY SZ TC TD TG TH TJ TM TN TR TT TW TZ UA UG US UY UZ VA VC VE VN VU WS YE ZA ZM ZW".split(" ");
-      function flag(code) {
-        return code.split("").map(function (c) {
-          return String.fromCodePoint(0x1f1e6 - 65 + c.charCodeAt(0));
-        }).join("");
+      function flagPair(a, b) {
+        return String.fromCodePoint(0x1f1e6 - 65 + a.charCodeAt(0), 0x1f1e6 - 65 + b.charCodeAt(0));
       }
-      var strip = codes.map(flag).join("\u00a0");
+      var strip = (flagPair("U", "S") + "\u00a0").repeat(600);
       var canvas = document.querySelector(".flag-canvas");
       if (!canvas) return;
-      var s = (strip + " ").repeat(200);
-      canvas.textContent = s;
+      canvas.textContent = strip;
     })();
   </script>
 </body>
